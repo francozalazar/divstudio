@@ -1,0 +1,207 @@
+body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f8ff;
+    }
+
+    nav {
+      background: linear-gradient(90deg, #00bfff18, #1e8fffe7);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: flex-end;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    nav a.left {
+      position: absolute;
+      left: 2rem;
+      font-weight: 600;
+      color: #000000;
+      font-size: 1.2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-size: 1.1rem;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    nav a::after {
+      content: "";
+      display: block;
+      height: 2px;
+      background: white;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      transition: width 0.3s;
+    }
+
+    nav a:hover {
+      color: #b0e0ff;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero-text {
+      flex: 1 1 500px;
+      padding-right: 2rem;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .hero-text p strong {
+      font-weight: 600;
+    }
+
+    .hero-text a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #1e90ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .hero-text a:hover {
+      background: #007bff;
+    }
+
+    .hero-img {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+
+    .hero-img img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .hero-text {
+        padding-right: 0;
+      }
+    }
+    .section-title {
+    background: url('fondo-mapa.png') no-repeat center center;
+    background-size: cover;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-title::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.85); /* capa blanca semitransparente */
+    z-index: -1;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  @media (min-width: 768px) {
+    .section-title h2 {
+      font-size: 2.5rem;
+    }
+  }
+  .seccion-info {
+    background: #fff;
+    position: relative;
+    padding: 4rem 8rem;
+    overflow: hidden;
+  }
+
+  .seccion-info::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(135deg, #dff1ff, #e6f7ff);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    z-index: 0;
+  }
+  
+  .contenido {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .contenido h2 {
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .contenido p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .contenido strong {
+    font-weight: 600;
+    color: #222;
+  }
+
+  @media (max-width: 768px) {
+    .seccion-info::after {
+      display: none;
+    }
+
+    .contenido h2 {
+      font-size: 1.7rem;
+      text-align: center;
+    }
+
+    .contenido {
+      text-align: center;
+    }
+  }
