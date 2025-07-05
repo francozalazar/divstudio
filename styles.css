@@ -347,3 +347,92 @@ html {
   margin-top: 2rem;
   color: #333;
 }
+.tarjetas_223 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.tarjetas_223 .tarjeta {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px);
+}
+
+.tarjetas_223 .tarjeta h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #1a1a1a;
+}
+
+.tarjetas_223 .tarjeta p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+.campanias {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #f0f8ff, #ffffff);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.campanias h2 {
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 2.5rem;
+}
+
+.tarjetas-campania {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tarjeta-campania {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.tarjeta-campania:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-campania img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.tarjeta-campania h3 {
+  font-size: 1.1rem;
+  color: #f44336;
+  margin-bottom: 1rem;
+}
+
+.tarjeta-campania ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tarjeta-campania ul li {
+  border-top: 1px solid #eee;
+  padding: 0.75rem 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.tarjeta-campania ul li:first-child {
+  border-top: none;
+}
