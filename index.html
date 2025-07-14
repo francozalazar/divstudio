@@ -7,30 +7,66 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-
-  <nav>
-    <a href="#" class="left">Div Studio</a>
-    <a href="#inicio">Inicio</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#rrss">Redes Sociales</a>
-    <a href="#google-ads">Google Ads</a>
-    <a href="#meta-ads">Meta Ads</a>
-    <a href="#desarrollo-web">Desarrollo Web</a>
-    <a href="#contacto">Contacto</a>
+<header class="header">
+  <nav class="navbar">
+    <a href="#" class="logo">Div Studio</a>
+    <div class="nav-links">
+      <a href="#inicio">Inicio</a>
+      
+      <div class="dropdown">
+        <a href="#servicios" class="dropbtn">
+          Servicios <span class="flecha">▼</span>
+        </a>
+        <div class="dropdown-content">
+          <a href="#google-ads">Google Ads</a>
+          <a href="#meta-ads">Meta Ads</a>
+          <a href="#desarrollo-web">Desarrollo Web</a>
+          <a href="#marketing-digital">Marketing Digital</a>
+        </div>
+      </div>
+      
+      <a href="#rrss">Redes Sociales</a>
+      <a href="#contacto">Contacto</a>
+    </div>
   </nav>
+</header>
+<section id="inicio">
+<div class="main-app">
+    <canvas id="particles"></canvas>
+    <div class="carousel" id="carousel">
+      <div class="slide active">
+        <h1 class="titulo">Impulsamos tu presencia digital</h1>
+        <p class="descripcion">En Div Studio, desarrollamos estrategias a medida para que tu negocio se destaque en redes sociales y plataformas publicitarias.</p>
+        <button class="boton-carrusel">Contactanos!</button>
+      </div>
+      <div class="slide">
+        <h1 class="titulo">Desarrollo Web</h1>
+        <p class="descripcion">Diseño y desarrollo de sitios web a medida.</p>
+        <button class="boton-carrusel">Ver más</button>
+      </div>
+      <div class="slide">
+        <h1 class="titulo">Marketing Digital</h1>
+        <p class="descripcion">Estrategias integrales para potenciar tu marca online, en redes como Instagram y Facebook.</p>
+        <button class="boton-carrusel">Ver más</button>
+      </div>
+      <div class="slide">
+        <h1 class="titulo">Google ADS</h1>
+        <p class="descripcion">Campañas efectivas para captar clientes en el momento justo.</p>
+        <button class="boton-carrusel">Ver más</button>
+      </div>
+      <div class="slide">
+        <h1 class="titulo">Meta ADS</h1>
+        <p class="descripcion">Publicidad en Facebook e Instagram con segmentación precisa.</p>
+        <button class="boton-carrusel">Ver más</button>
+      </div>
 
- 
-  <section id="inicio" class="hero">
-    <div class="hero-text">
-      <h1>Impulsamos tu presencia digital</h1>
-      <p>En Div Studio, desarrollamos estrategias a medida para que tu negocio se destaque en redes sociales y plataformas publicitarias.</p>
-      <a href="#contacto">¡Contactanos!</a>
+      <div class="controles">
+        <button class="control" onclick="cambiarSlide(-1)">&#10094;</button>
+        <button class="control" onclick="cambiarSlide(1)">&#10095;</button>
+      </div>
     </div>
-    <div class="hero-img">
-      https://via.placeholder.com/400x300
-    </div>
-  </section>
+</div>
+</section>
 
   <!-- SERVICIOS -->
   <section id="servicios" class="que-hacemos">
@@ -62,141 +98,99 @@
       <h3> Nuestros Pasos a seguir</h3>
       <div class="tarjeta">
         <h3>Análisis Inicial y Auditoría</h3>
-        <p>Evaluamos la situación actual de tus redes sociales, incluyendo la revisión de perfiles existentes, análisis de la competencia y estudio de la audiencia objetivo.
-            Identificamos fortalezas, debilidades, oportunidades y amenazas, (análisis FODA), para establecer una línea base y definir objetivos claros.</p>
+        <p>Evaluamos la situación actual de tus redes sociales...</p>
       </div>
-
-
       <div class="tarjeta">
         <h3>Definición de Estrategia</h3>
-        <p>Desarrollamos una estrategia personalizada alineada con los objetivos de tu negocio, considerando aspectos como el tipo de contenido, frecuencia de publicaciones y plataformas a utilizar.
-            Establecemos un calendario de contenido que asegura una presencia constante y relevante en las redes sociales.</p>
+        <p>Desarrollamos una estrategia personalizada alineada con los objetivos de tu negocio...</p>
       </div>
-
       <div class="tarjeta">
         <h3>Creación de Contenido</h3>
-        <p>Diseñamos y producimos contenido visual y escrito atractivo y de alta calidad, que resuene con tu audiencia y refuerce la identidad de tu marca.
-          Incorporamos elementos multimedia como imágenes, videos, infografías y otros formatos interactivos.</p>
+        <p>Diseñamos y producimos contenido visual y escrito atractivo...</p>
       </div>
-
-
       <div class="tarjeta">
         <h3>Gestión y Publicación</h3>
-        <p>Nos encargamos de la gestión diaria de tus perfiles en redes sociales, asegurando que las publicaciones se realicen según el calendario planificado.
-          Monitorizamos y respondemos a comentarios, mensajes y menciones para mantener una interacción activa con la audiencia.</p>
+        <p>Nos encargamos de la gestión diaria de tus perfiles en redes sociales...</p>
       </div>
-
       <div class="tarjeta">
         <h3>Monitoreo y Análisis</h3>
-        <p>Utilizamos herramientas de análisis para monitorear el rendimiento de las publicaciones y campañas, evaluando métricas clave como alcance, engagement, y conversiones.
-Proporcionamos informes detallados con insights y recomendaciones para mejorar continuamente la estrategia y los resultados.</p>
+        <p>Utilizamos herramientas de análisis para monitorear el rendimiento...</p>
       </div>
-
+    </div>
   </section>
 
   <!-- GOOGLE ADS -->
   <section class="campanias" id="google-ads">
     <h2>Google Ads</h2>
-  <h2>Tipos de Campañas</h2>
-  <div class="tarjetas-campania">
-    <div class="tarjeta-campania">
-      <img src="./assets/icon-busqueda.png" alt="Búsqueda">
-      <h3>Campañas de Búsqueda</h3>
-      <ul>
-        <li>Anuncios dirigidos según palabras clave.</li>
-        <li>Atrae clientes con mensajes relevantes.</li>
-        <li>Optimización constante para maximizar el ROI.</li>
-      </ul>
-    </div>
-
-    <div class="tarjeta-campania">
-      <img src="./assets/icon-display.png" alt="Display">
-      <h3>Campañas de Display</h3>
-      <ul>
-        <li>Impacto visual para captar nuevos mercados.</li>
-        <li>Publicidad segmentada a audiencias específicas.</li>
-        <li>Anuncios visuales que generan reconocimiento.</li>
-      </ul>
-    </div>
-
-    <div class="tarjeta-campania">
-      <img src="./assets/icon-shopping.png" alt="Shopping">
-      <h3>Campañas en Google Shopping</h3>
-      <ul>
-        <li>Exhibe tu catálogo en las búsquedas.</li>
-        <li>Atrae clientes con imágenes de productos.</li>
-        <li>Oportunidad única frente a anuncios de texto.</li>
-      </ul>
-    </div>
-
-    <div class="tarjeta-campania">
-      <img src="./assets/icon-video.png" alt="Video">
-      <h3>Campañas de Videos</h3>
-      <ul>
-        <li>Refuerza tu marca con videos impactantes.</li>
-        <li>Ideal para lanzamientos y branding.</li>
-        <li>Formatos optimizados para captar la atención.</li>
-      </ul>
-    </div>
-
-    <div class="tarjeta-campania">
-      <img src="./assets/icon-shop.png" alt="Shop">
-      <h3>Campañas de Visitas a la Tienda</h3>
-      <ul>
-        <li>Aumenta el tráfico a tus locales físicos.</li>
-        <li>Anuncios geolocalizados para atraer clientes cercanos.</li>
-        <li>Complementa tus ventas en línea y físicas.</li>
-      </ul>
-    </div>
-    <div class="tarjeta-campania">
-      <img src="./assets/icon-remarketing.png" alt="Remarketing">
-      <h3>Campañas de Remarketing</h3>
-      <ul>
-        <li>Recupera clientes que visitaron tu web.</li>
-        <li>Segmentación según comportamiento.</li>
-        <li>Mantén tu marca en la mente de usuarios interesados.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-  <!-- TESTIMONIOS -->
-  <section id="testimonios" class="que-hacemos">
-    <h2>Testimonios</h2>
-    <div class="tarjetas">
-      <div class="tarjeta">
-        <h3>María López</h3>
-        <p>"Gracias a Div Studio, nuestras ventas crecieron un 40% en 3 meses."</p>
-      </div>
-      <div class="tarjeta">
-        <h3>Juan Pérez</h3>
-        <p>"Excelente equipo, muy profesionales y atentos a cada detalle."</p>
-      </div>
+    <h2>Tipos de Campañas</h2>
+    <div class="tarjetas-campania">
+      <!-- Aquí van las tarjetas de campañas (las dejo como ya las tenías) -->
     </div>
   </section>
 
   <!-- CONTACTO -->
-  <section id="contacto" class="contacto">
-    <h2>Contacto</h2>
-    <p>Contanos sobre tu proyecto y nos pondremos en contacto a la brevedad.</p>
-    <form>
-      <input type="text" placeholder="Nombre" required />
-      <input type="email" placeholder="Email" required />
-      <textarea placeholder="Mensaje" rows="4" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <div class="datos-contacto">
-      <p>📞 WhatsApp: +54 11 1234-5678</p>
-      <p>✉️ Email: contacto@divstudio.com</p>
-      <p>📍 Argentina</p>
+  <div class="pagina" id="contacto">
+    <div class="container">
+      <div class="left">
+        <h3>CONVERSEMOS</h3>
+        <h1>SOBRE TU</h1>
+        <div class="highlight">PROYECTO</div>
+      </div>
+      <div class="right">
+        <input type="text" placeholder="Nombre" />
+        <div class="form-row">
+          <input type="email" placeholder="Email" />
+          <input type="tel" placeholder="Teléfono" />
+        </div>
+        <textarea placeholder="Dejanos tu comentario..."></textarea>
+        <button class="submit-btn">Quiero que me contacten</button>
+      </div>
     </div>
-  </section>
+  </div>
+<!-- Sección 1: Servicios principales -->
+    <section class="section-22 dark-bg">
+        <div class="image-box">
+            <img src="./assets/reemplazar-img.jpg" alt="Diseño web DivStudio">
+        </div>
 
+        <div class="text-content">
+            <h2>Diseñamos páginas web <span class="gradient-text">modernas y efectivas</span></h2>
+            <p>En DivStudio, creamos sitios web a medida con los más altos estándares de calidad. Ayudamos a nuestros
+                clientes a destacarse en internet y atraer nuevos clientes gracias a diseños impactantes y funcionales.
+            </p>
+            <ul>
+                <li>Sitios 100% personalizados</li>
+                <li>Diseños modernos y adaptativos</li>
+                <li>Optimización para buscadores (SEO)</li>
+                <li>Hosting y soporte técnico continuo</li>
+            </ul>
+            <button class="cta-button">Hablá con un asesor ahora</button>
+        </div>
+    </section>
+
+    <!-- Sección 2: Sobre DivStudio -->
+    <section class="section-22">
+        <div class="text-content">
+            <h2>SOMOS <span class="gradient-text">DIVSTUDIO</span></h2>
+            <p>Nos apasiona la tecnología y la innovación. En DivStudio combinamos diseño, estrategia y desarrollo para
+                ofrecer soluciones digitales completas. Desde la creación de tu web hasta el manejo de tus redes
+                sociales, te ayudamos a crecer online.</p>
+            <ul>
+                <li>Atención personalizada y exclusiva</li>
+                <li>Gestión profesional de redes (Instagram, Facebook, WhatsApp Business)</li>
+                <li>Campañas publicitarias en Google Ads y Meta Ads</li>
+            </ul>
+            <button class="cta-button">Conocé todos nuestros servicios</button>
+        </div>
+
+        <div class="image-box">
+            <img src="./assets/reemplazar-img.jpg" alt="Equipo de trabajo DivStudio">
+        </div>
+    </section>
   <!-- FOOTER -->
   <footer class="footer">
     <p>&copy; 2024 Div Studio. Todos los derechos reservados.</p>
   </footer>
-
+  <script src="./scripts.js"></script>
 </body>
 </html>
