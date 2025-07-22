@@ -4,8 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Div Studio</title>
+  <!-- SwiperJS CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="styles.css" />
+  
 </head>
+
 <body>
 <header class="header">
   <nav class="navbar">
@@ -96,6 +103,7 @@
     <div class="contenido">
       <h2>Administración de Redes Sociales</h2>
       <h3> Nuestros Pasos a seguir</h3>
+       <div class="tarjetas-redes">
       <div class="tarjeta">
         <h3>Análisis Inicial y Auditoría</h3>
         <p>Evaluamos la situación actual de tus redes sociales...</p>
@@ -116,17 +124,57 @@
         <h3>Monitoreo y Análisis</h3>
         <p>Utilizamos herramientas de análisis para monitorear el rendimiento...</p>
       </div>
+      </div>
     </div>
   </section>
 
   <!-- GOOGLE ADS -->
-  <section class="campanias" id="google-ads">
-    <h2>Google Ads</h2>
-    <h2>Tipos de Campañas</h2>
-    <div class="tarjetas-campania">
-      <!-- Aquí van las tarjetas de campañas (las dejo como ya las tenías) -->
+  <section id="campañas" class="swiper-section">
+  <h2 class="swiper-title">Tipos de Campañas Google Ads</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <h3>Campañas de Búsqueda</h3>
+        <p>Creación de anuncios dinámicos para captar usuarios que buscan tu producto o servicio. Aumentamos conversiones y ROI.</p>
+      </div>
+
+      <div class="swiper-slide">
+        <h3>Campañas de Display</h3>
+        <p>Segmentación precisa en sitios relevantes para captar atención y motivar conversiones con anuncios visuales.</p>
+      </div>
+
+      <div class="swiper-slide">
+        <h3>Google Shopping</h3>
+        <p>Mostrá tus productos con fotos, precios y títulos en Google Shopping. Ideal para ecommerce.</p>
+      </div>
+
+      <div class="swiper-slide">
+        <h3>Campañas Locales</h3>
+        <p>Promocioná tu negocio en Maps, YouTube y más para atraer visitas físicas y aumentar ventas locales.</p>
+      </div>
+
+      <div class="swiper-slide">
+        <h3>Campañas de Video</h3>
+        <p>Anuncios personalizados en YouTube que motivan a visitar tu web. Conectá con tu audiencia a través del video.</p>
+      </div>
+
+      <div class="swiper-slide">
+        <h3>Remarketing</h3>
+        <p>Seguimos a usuarios que visitaron tu web con anuncios relevantes. Recuperamos interés y aumentamos conversiones.</p>
+      </div>
+
     </div>
-  </section>
+    <!-- Flechas -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Paginación -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+
 
   <!-- CONTACTO -->
   <div class="pagina" id="contacto">
@@ -189,8 +237,33 @@
     </section>
   <!-- FOOTER -->
   <footer class="footer">
-    <p>&copy; 2024 Div Studio. Todos los derechos reservados.</p>
-  </footer>
+  <div class="footer-contenido">
+    <div class="footer-info">
+      <h3>DivStudio</h3>
+      <p>Diseñamos tu presencia digital.</p>
+      <p>Webs, redes sociales, Google & Meta Ads.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#rrss">Redes Sociales</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+
+    <div class="footer-redes">
+      <a href="#"><img src="icono-instagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="icono-facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="icono-whatsapp.svg" alt="WhatsApp"></a>
+    </div>
+  </div>
+
+  <div class="footer-copy">
+    <p>&copy; 2025 DivStudio · Todos los derechos reservados</p>
+  </div>
+</footer>
+
   <script src="./scripts.js"></script>
+
+
 </body>
 </html>
