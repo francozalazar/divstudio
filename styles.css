@@ -374,14 +374,13 @@ body {
   background: linear-gradient(135deg, #e0f0ff, #ffeef0);
   text-align: center;
   font-family: 'Poppins', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-.que-hacemos h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  color: #111;
-}
+
 
 .tarjetas {
   display: flex;
@@ -826,50 +825,52 @@ html {
     margin: 0 0.5rem;
   }
 }
-.swiper-section {
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #e0f7ff, #ffffff);
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-}
 
-.swiper-title {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #111;
-}
+.card1 {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 15px;
+      cursor: pointer;
+    }
 
-.swiper {
-  max-width: 900px;
-  margin: auto;
-  padding: 2rem 1rem;
-}
+    .card1 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
 
-.swiper-slide {
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 1rem;
-  padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  backdrop-filter: blur(6px);
-}
+    .card1 .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      transition: background 0.5s ease;
+    }
 
-.swiper-slide h3 {
-  color: #007acc;
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-}
+    .card1 .text {
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      transition: bottom 0.5s ease;
+    }
 
-.swiper-slide p {
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.6;
-}
+    .card1:hover img {
+      transform: scale(1.1);
+    }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: #1e90ff;
-}
+    .card1:hover .overlay {
+      background: rgba(0, 0, 0, 0.7);
+    }
 
-.swiper-pagination-bullet-active {
-  background-color: #1e90ff;
-}
+    .card1:hover .text {
+      bottom: 0;
+    }

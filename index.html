@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Div Studio</title>
   <!-- SwiperJS CSS -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <link rel="stylesheet" href="styles.css" />
   
 </head>
@@ -78,23 +77,38 @@
   <!-- SERVICIOS -->
   <section id="servicios" class="que-hacemos">
     <h2>Servicios</h2>
-    <div class="tarjetas">
-      <div class="tarjeta">
-        <h3>Google Ads</h3>
-        <p>Campañas efectivas para captar clientes en el momento justo.</p>
-      </div>
-      <div class="tarjeta">
-        <h3>Meta Ads</h3>
-        <p>Publicidad en Facebook e Instagram con segmentación precisa.</p>
-      </div>
-      <div class="tarjeta">
-        <h3>Marketing Digital</h3>
-        <p>Estrategias integrales para potenciar tu marca online, en redes como Instagram y Facebook.</p>
-      </div>
-      <div class="tarjeta">
-        <h3>Desarrollo Web</h3>
-        <p>Diseño y desarrollo de sitios web a medida.</p>
-      </div>
+    <div class="card1">
+    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Imagen">
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Desarrollo Web</h2>
+      <p>Soluciones modernas y a medida.</p>
+    </div>
+  </div>
+      <div class="card1">
+    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Imagen">
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Google Ads</h2>
+      <p>Campañas efectivas para captar clientes en el momento justo.</p>
+    </div>
+  </div>
+      <div class="card1">
+    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Imagen">
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Meta Ads</h2>
+      <p>Publicidad en Facebook e Instagram con segmentación precisa.</p>
+    </div>
+  </div>
+      <div class="card1">
+    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Imagen">
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Marketing Digital</h2>
+      <p>Estrategias integrales para potenciar tu marca online, en redes como Instagram y Facebook.</p>
+    </div>
+  </div>
     </div>
   </section>
 
@@ -128,7 +142,7 @@
     </div>
   </section>
 
-  <!-- GOOGLE ADS -->
+  <!-- GOOGLE ADS 
   <section id="campañas" class="swiper-section">
   <h2 class="swiper-title">Tipos de Campañas Google Ads</h2>
   <div class="swiper mySwiper">
@@ -165,14 +179,15 @@
       </div>
 
     </div>
-    <!-- Flechas -->
+    -->
+    <!-- Flechas 
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-    <!-- Paginación -->
+    Paginación 
     <div class="swiper-pagination"></div>
   </div>
 </section>
-
+-->
 
 
 
@@ -234,7 +249,7 @@
         <div class="image-box">
             <img src="./assets/reemplazar-img.jpg" alt="Equipo de trabajo DivStudio">
         </div>
-    </section>
+    </section> 
   <!-- FOOTER -->
   <footer class="footer">
   <div class="footer-contenido">
@@ -260,9 +275,39 @@
   <div class="footer-copy">
     <p>&copy; 2025 DivStudio · Todos los derechos reservados</p>
   </div>
+  
 </footer>
 
-  <script src="./scripts.js"></script>
+  <!-- SwiperJS CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Swiper Init -->
+<script>
+  const swiperServicios = new Swiper('.mySwiperServicios', {
+    loop: true,
+    spaceBetween: 30,
+    grabCursor: true,
+    slidesPerView: 1,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    }
+  });
+</script>
+
 
 
 </body>
